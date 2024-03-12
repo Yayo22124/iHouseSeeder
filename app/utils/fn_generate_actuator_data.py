@@ -31,9 +31,30 @@ def fn_generate_actuator_data(location: str, actuator_name: str) -> dict:
                     "value": "Desactivado"  
                 }
             ]
+
+    if actuator_name == "FAN":
+        actions = [{"name": "Acticación mecánica", "value": randInt(0,100), "unit": "%"}]
         
-    if actuator_name == "LDR":
-        actions = [{"name": "Detección de Iluminación", "value": randInt(0, 1024)}]
+    if actuator_name == "SG90":
+        value = randInt(0,1);
+        if value == 1:
+            actions = [
+                {
+                    "name": "Acticación mecánica",
+                    "value": randInt(0,90),
+                    "unit": "°",
+                    "status": "Interrumpido",
+                }
+            ],
+        else :
+            actions = [
+                {
+                    "name": "Acticación mecánica",
+                    "value": randInt(0,90),
+                    "unit": "°",
+                    "status": "Finalizado",
+                }
+            ],
 
     actuatorData = {
         "type": actuator["type"],
