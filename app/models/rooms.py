@@ -203,7 +203,7 @@ roomsData = {
         {
             # "_id": {"$oid": "65dd0ff411bbe96dbfe4b2d6"},
             "type": "Actuador",
-            "name": "Micro Servomotor",
+            "name": "Micro Servomotor 1",
             "brand": "TowerPro",
             "model": "SG90",
             "specifications": [
@@ -236,6 +236,51 @@ roomsData = {
             "owner": "MAHITECH-Haziel",
             "startsAt": dt(2024, 3, 11, 13, 50,0).timestamp(),
             "endsAt": dt(2024, 3, 11, 13, 50,5).timestamp(),
+            "actions": [
+                {
+                    "name": "Acticación mecánica",
+                    "value": "90",
+                    "unit": "°",
+                    "status": "Interrumpido",
+                }
+            ],
+        },
+        {
+            # "_id": {"$oid": "65dd0ff411bbe96dbfe4b2d6"},
+            "type": "Actuador",
+            "name": "Micro Servomotor 1",
+            "brand": "TowerPro",
+            "model": "SG90",
+            "specifications": [
+                {
+                    "name": "Velocidad de operación",
+                    "value": 0.12,
+                    "unit": "segundos/60°",
+                },
+                {"name": "Torque", "value": 2.5, "unit": "kg-cm"},
+                {
+                    "name": "Voltage de operación",
+                    "value": 5.0,
+                    "unit": "V",
+                },
+                {
+                    "name": "Corriente de operación",
+                    "value": 10.0,
+                    "unit": "mA",
+                    "type": "VCD",
+                },
+                {
+                    "name": "Consumo eléctrico",
+                    "value": 0.5,
+                    "unit": "W",
+                },
+            ],
+            "location": "Recámara 3",
+            "status": "Disponible",
+            "initialDate": dt(2024, 3, 11, 14, 50,0).timestamp(),
+            "owner": "MAHITECH-Haziel",
+            "startsAt": dt(2024, 3, 11, 14, 50,0).timestamp(),
+            "endsAt": dt(2024, 3, 11, 14, 50,5).timestamp(),
             "actions": [
                 {
                     "name": "Acticación mecánica",
