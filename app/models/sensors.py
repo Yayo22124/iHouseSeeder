@@ -2,7 +2,7 @@ sensors = {
     "DHT11": {
         # "_id": "65dd080111bbe96dbfe4b2d2",
         "type": "Sensor",
-        "name": "Sensor de temperatura y humedad",
+        "name": "Temperatura y Humedad",
         "brand": "Genérico",
         "model": "DHT11",
         "specifications": [
